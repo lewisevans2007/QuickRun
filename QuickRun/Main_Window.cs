@@ -31,7 +31,8 @@ namespace QuickRun
 
 		private void Exit_onclick(object sender, EventArgs e)
 		{
-			Application.Exit();
+			Exit_Warning f2 = new Exit_Warning();
+			f2.ShowDialog(); // Shows Form2
 		}
 
 		private void Run_onclick(object sender, EventArgs e)
