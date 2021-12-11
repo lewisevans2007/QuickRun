@@ -47,8 +47,8 @@
 			// 
 			// Exit
 			// 
-			this.Exit.BackColor = System.Drawing.Color.Red;
-			this.Exit.ForeColor = System.Drawing.Color.White;
+			this.Exit.BackColor = System.Drawing.SystemColors.ButtonFace;
+			this.Exit.ForeColor = System.Drawing.Color.Red;
 			this.Exit.Location = new System.Drawing.Point(269, 77);
 			this.Exit.Margin = new System.Windows.Forms.Padding(2);
 			this.Exit.Name = "Exit";
@@ -95,7 +95,7 @@
 			// 
 			// Run
 			// 
-			this.Run.BackColor = System.Drawing.Color.Lime;
+			this.Run.BackColor = System.Drawing.SystemColors.ButtonFace;
 			this.Run.Location = new System.Drawing.Point(183, 78);
 			this.Run.Margin = new System.Windows.Forms.Padding(2);
 			this.Run.Name = "Run";
@@ -125,7 +125,7 @@
 			// 
 			// HideButton
 			// 
-			this.HideButton.BackColor = System.Drawing.Color.Yellow;
+			this.HideButton.BackColor = System.Drawing.SystemColors.ButtonFace;
 			this.HideButton.Location = new System.Drawing.Point(227, 78);
 			this.HideButton.Margin = new System.Windows.Forms.Padding(2);
 			this.HideButton.Name = "HideButton";
@@ -137,11 +137,11 @@
 			// 
 			// button1
 			// 
-			this.button1.BackColor = System.Drawing.Color.Lime;
+			this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
 			this.button1.Location = new System.Drawing.Point(9, 78);
 			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(60, 19);
+			this.button1.Size = new System.Drawing.Size(46, 19);
 			this.button1.TabIndex = 7;
 			this.button1.Text = "Cmd";
 			this.button1.UseVisualStyleBackColor = false;
@@ -149,11 +149,11 @@
 			// 
 			// button2
 			// 
-			this.button2.BackColor = System.Drawing.Color.Lime;
-			this.button2.Location = new System.Drawing.Point(73, 77);
+			this.button2.BackColor = System.Drawing.SystemColors.ButtonFace;
+			this.button2.Location = new System.Drawing.Point(59, 78);
 			this.button2.Margin = new System.Windows.Forms.Padding(2);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(60, 19);
+			this.button2.Size = new System.Drawing.Size(56, 19);
 			this.button2.TabIndex = 8;
 			this.button2.Text = "Explorer";
 			this.button2.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
 			this.ClientSize = new System.Drawing.Size(317, 108);
 			this.Controls.Add(this.Version);
 			this.Controls.Add(this.label1);
