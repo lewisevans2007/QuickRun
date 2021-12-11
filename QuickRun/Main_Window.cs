@@ -32,7 +32,7 @@ namespace QuickRun
 		private void Exit_onclick(object sender, EventArgs e)
 		{
 			Exit_Warning f2 = new Exit_Warning();
-			f2.ShowDialog(); // Shows Form2
+			f2.ShowDialog();
 		}
 
 		private void Run_onclick(object sender, EventArgs e)
@@ -43,9 +43,18 @@ namespace QuickRun
 			{
 				strCmdText = "";
 			}
-			System.Diagnostics.Process.Start(Command.Text, strCmdText);
-			this.WindowState = FormWindowState.Minimized;
-			this.Hide();
+			try
+			{
+				System.Diagnostics.Process.Start(Command.Text, strCmdText);
+				this.WindowState = FormWindowState.Minimized;
+				this.Hide();
+			}
+			catch (Exception)
+			{
+				Error f3 = new Error();
+				f3.ShowDialog();
+			}
+
 		}
 		private void CheckEnterKeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
 		{
@@ -59,7 +68,17 @@ namespace QuickRun
 				{
 					strCmdText = "";
 				}
-				System.Diagnostics.Process.Start(Command.Text, strCmdText);
+				try
+				{
+					System.Diagnostics.Process.Start(Command.Text, strCmdText);
+					this.WindowState = FormWindowState.Minimized;
+					this.Hide();
+				}
+				catch (Exception)
+				{
+					Error f3 = new Error();
+					f3.ShowDialog();
+				}
 				this.WindowState = FormWindowState.Minimized;
 				this.Hide();
 			}
