@@ -16,5 +16,10 @@ namespace QuickRun
 		{
 			InitializeComponent();
 		}
+
+		private void Ok_Click(object sender, EventArgs e)
+		{
+			Hide();
+		}
 	}
 }

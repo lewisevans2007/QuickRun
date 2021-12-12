@@ -32,6 +32,7 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
+			this.Ok = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -66,12 +67,25 @@
 			this.label2.Text = "An error occoured when executing \r\nthe command\r\n\r\ncheck the location and try agai" +
     "n";
 			// 
+			// Ok
+			// 
+			this.Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+			this.Ok.ForeColor = System.Drawing.Color.White;
+			this.Ok.Location = new System.Drawing.Point(339, 113);
+			this.Ok.Name = "Ok";
+			this.Ok.Size = new System.Drawing.Size(37, 23);
+			this.Ok.TabIndex = 3;
+			this.Ok.Text = "Ok";
+			this.Ok.UseVisualStyleBackColor = false;
+			this.Ok.Click += new System.EventHandler(this.Ok_Click);
+			// 
 			// Error
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
 			this.ClientSize = new System.Drawing.Size(379, 139);
+			this.Controls.Add(this.Ok);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.pictureBox1);
@@ -92,5 +106,6 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Button Ok;
 	}
 }
