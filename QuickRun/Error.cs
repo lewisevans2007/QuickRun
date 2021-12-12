@@ -19,7 +19,7 @@ namespace QuickRun
 
 		private void Ok_Click(object sender, EventArgs e)
 		{
-			Hide();
+			Close();
 		}
 	}
 }

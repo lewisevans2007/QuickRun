@@ -16,17 +16,15 @@ namespace QuickRun
 		public MainWindow()
 		{
 			InitializeComponent();
-			this.WindowState = FormWindowState.Minimized;
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			Version.Text = Assembly.GetEntryAssembly().GetName().Version.ToString();
 			Trayicon.BalloonTipIcon = ToolTipIcon.Info;
-			Trayicon.BalloonTipText = "QuickRun is now running in the background";
-			Trayicon.BalloonTipTitle = "Welcome Message";
+			Trayicon.BalloonTipText = "Welome to quick run";
+			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version.ToString(); ;
 			Trayicon.ShowBalloonTip(500);
-			this.Hide();
 		}
 
 		private void Exit_onclick(object sender, EventArgs e)
@@ -47,6 +45,8 @@ namespace QuickRun
 			{
 				System.Diagnostics.Process.Start(Command.Text, strCmdText);
 				this.WindowState = FormWindowState.Minimized;
+				Command.Text = "Enter Command";
+				Args.Text = "Enter Arguments (Optional)";
 				this.Hide();
 			}
 			catch (Exception)
@@ -72,6 +72,8 @@ namespace QuickRun
 				{
 					System.Diagnostics.Process.Start(Command.Text, strCmdText);
 					this.WindowState = FormWindowState.Minimized;
+					Command.Text = "Enter Command";
+					Args.Text = "Enter Arguments (Optional)";
 					this.Hide();
 				}
 				catch (Exception)

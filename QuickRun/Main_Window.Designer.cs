@@ -52,7 +52,7 @@
 			this.Exit.FlatAppearance.BorderSize = 0;
 			this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Exit.ForeColor = System.Drawing.Color.Red;
-			this.Exit.Location = new System.Drawing.Point(359, 95);
+			this.Exit.Location = new System.Drawing.Point(359, 108);
 			this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Exit.Name = "Exit";
 			this.Exit.Size = new System.Drawing.Size(49, 25);
@@ -66,7 +66,7 @@
 			this.Command.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
 			this.Command.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Command.ForeColor = System.Drawing.Color.White;
-			this.Command.Location = new System.Drawing.Point(12, 69);
+			this.Command.Location = new System.Drawing.Point(12, 82);
 			this.Command.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Command.Name = "Command";
 			this.Command.Size = new System.Drawing.Size(140, 22);
@@ -79,7 +79,7 @@
 			this.Args.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
 			this.Args.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Args.ForeColor = System.Drawing.Color.White;
-			this.Args.Location = new System.Drawing.Point(158, 69);
+			this.Args.Location = new System.Drawing.Point(158, 82);
 			this.Args.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Args.Name = "Args";
 			this.Args.Size = new System.Drawing.Size(249, 22);
@@ -91,7 +91,7 @@
 			this.Title.AutoSize = true;
 			this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Title.ForeColor = System.Drawing.Color.DodgerBlue;
-			this.Title.Location = new System.Drawing.Point(101, 11);
+			this.Title.Location = new System.Drawing.Point(101, 24);
 			this.Title.Name = "Title";
 			this.Title.Size = new System.Drawing.Size(295, 32);
 			this.Title.TabIndex = 3;
@@ -104,7 +104,7 @@
 			this.Run.FlatAppearance.BorderSize = 0;
 			this.Run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Run.ForeColor = System.Drawing.Color.White;
-			this.Run.Location = new System.Drawing.Point(244, 96);
+			this.Run.Location = new System.Drawing.Point(244, 109);
 			this.Run.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Run.Name = "Run";
 			this.Run.Size = new System.Drawing.Size(53, 23);
@@ -123,7 +123,7 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(15, 10);
+			this.pictureBox1.Location = new System.Drawing.Point(15, 23);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(59, 52);
@@ -135,10 +135,11 @@
 			// 
 			this.HideButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
 			this.HideButton.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.HideButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.HideButton.FlatAppearance.BorderSize = 0;
 			this.HideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.HideButton.ForeColor = System.Drawing.Color.White;
-			this.HideButton.Location = new System.Drawing.Point(303, 96);
+			this.HideButton.Location = new System.Drawing.Point(303, 109);
 			this.HideButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.HideButton.Name = "HideButton";
 			this.HideButton.Size = new System.Drawing.Size(51, 23);
@@ -154,7 +155,7 @@
 			this.button1.FlatAppearance.BorderSize = 0;
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(12, 96);
+			this.button1.Location = new System.Drawing.Point(12, 109);
 			this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(61, 23);
@@ -170,7 +171,7 @@
 			this.button2.FlatAppearance.BorderSize = 0;
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(79, 96);
+			this.button2.Location = new System.Drawing.Point(79, 109);
 			this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(75, 23);
@@ -183,7 +184,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(107, 43);
+			this.label1.Location = new System.Drawing.Point(107, 56);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(159, 16);
@@ -194,7 +195,7 @@
 			// 
 			this.Version.AutoSize = true;
 			this.Version.ForeColor = System.Drawing.Color.Gray;
-			this.Version.Location = new System.Drawing.Point(353, 43);
+			this.Version.Location = new System.Drawing.Point(353, 56);
 			this.Version.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.Version.Name = "Version";
 			this.Version.Size = new System.Drawing.Size(44, 16);
@@ -204,10 +205,12 @@
 			// 
 			// MainWindow
 			// 
+			this.AcceptButton = this.Run;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-			this.ClientSize = new System.Drawing.Size(423, 133);
+			this.CancelButton = this.HideButton;
+			this.ClientSize = new System.Drawing.Size(423, 140);
 			this.Controls.Add(this.Version);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button2);
