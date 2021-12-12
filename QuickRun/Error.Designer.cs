@@ -39,9 +39,10 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+			this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(74, 70);
+			this.pictureBox1.Size = new System.Drawing.Size(56, 57);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
@@ -51,18 +52,20 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Red;
-			this.label1.Location = new System.Drawing.Point(93, 13);
+			this.label1.Location = new System.Drawing.Point(70, 11);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(192, 29);
+			this.label1.Size = new System.Drawing.Size(154, 24);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "An error occured";
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(98, 46);
+			this.label2.Location = new System.Drawing.Point(74, 37);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(211, 64);
+			this.label2.Size = new System.Drawing.Size(173, 52);
 			this.label2.TabIndex = 2;
 			this.label2.Text = "An error occoured when executing \r\nthe command\r\n\r\ncheck the location and try agai" +
     "n";
@@ -71,9 +74,10 @@
 			// 
 			this.Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
 			this.Ok.ForeColor = System.Drawing.Color.White;
-			this.Ok.Location = new System.Drawing.Point(339, 113);
+			this.Ok.Location = new System.Drawing.Point(252, 92);
+			this.Ok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Ok.Name = "Ok";
-			this.Ok.Size = new System.Drawing.Size(37, 23);
+			this.Ok.Size = new System.Drawing.Size(30, 19);
 			this.Ok.TabIndex = 3;
 			this.Ok.Text = "Ok";
 			this.Ok.UseVisualStyleBackColor = false;
@@ -81,10 +85,10 @@
 			// 
 			// Error
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-			this.ClientSize = new System.Drawing.Size(379, 139);
+			this.ClientSize = new System.Drawing.Size(284, 113);
 			this.Controls.Add(this.Ok);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -93,6 +97,7 @@
 			this.ForeColor = System.Drawing.Color.White;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "Error";
 			this.Text = "Error";
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
