@@ -20,11 +20,7 @@ namespace QuickRun
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			Version.Text = Assembly.GetEntryAssembly().GetName().Version.ToString();
-			Trayicon.BalloonTipIcon = ToolTipIcon.Info;
-			Trayicon.BalloonTipText = "Welome to quick run";
-			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version.ToString(); ;
-			Trayicon.ShowBalloonTip(500);
+
 		}
 
 		private void Exit_onclick(object sender, EventArgs e)
@@ -107,9 +103,5 @@ namespace QuickRun
 			System.Diagnostics.Process.Start("explorer", "");
 		}
 
-		private void Version_Click(object sender, EventArgs e)
-		{
-
-		}
 	}
 }
