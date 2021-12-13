@@ -104,7 +104,7 @@
 			this.Run.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.Run.FlatAppearance.BorderSize = 0;
 			this.Run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.Run.ForeColor = System.Drawing.Color.White;
+			this.Run.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
 			this.Run.Location = new System.Drawing.Point(183, 81);
 			this.Run.Margin = new System.Windows.Forms.Padding(2);
 			this.Run.Name = "Run";
