@@ -42,6 +42,7 @@
 			this.button2 = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.Version = new System.Windows.Forms.Label();
+			this.about = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -201,6 +202,22 @@
 			this.Version.TabIndex = 10;
 			this.Version.Text = "0.0.0.0";
 			// 
+			// about
+			// 
+			this.about.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+			this.about.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.about.FlatAppearance.BorderSize = 0;
+			this.about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.about.ForeColor = System.Drawing.Color.White;
+			this.about.Location = new System.Drawing.Point(118, 81);
+			this.about.Margin = new System.Windows.Forms.Padding(2);
+			this.about.Name = "about";
+			this.about.Size = new System.Drawing.Size(56, 19);
+			this.about.TabIndex = 11;
+			this.about.Text = "About";
+			this.about.UseVisualStyleBackColor = false;
+			this.about.Click += new System.EventHandler(this.about_Click);
+			// 
 			// MainWindow
 			// 
 			this.AcceptButton = this.Run;
@@ -209,6 +226,7 @@
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
 			this.CancelButton = this.HideButton;
 			this.ClientSize = new System.Drawing.Size(317, 108);
+			this.Controls.Add(this.about);
 			this.Controls.Add(this.Version);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.button2);
@@ -247,6 +265,7 @@
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label Version;
+		private System.Windows.Forms.Button about;
 	}
 }
 
