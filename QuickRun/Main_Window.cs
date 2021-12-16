@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
 
@@ -44,10 +37,10 @@ namespace QuickRun
 			try
 			{
 				System.Diagnostics.Process.Start(Command.Text, strCmdText);
-				this.WindowState = FormWindowState.Minimized;
+				WindowState = FormWindowState.Minimized;
 				Command.Text = "Enter Command";
 				Args.Text = "Enter Arguments (Optional)";
-				this.Hide();
+				Hide();
 				Trayicon.BalloonTipIcon = ToolTipIcon.Info;
 				Trayicon.BalloonTipText = "To open it double click on the system tray icon (it could be hidden in the arrow).";
 				Trayicon.BalloonTipTitle = "QuickRun is running in the background";
@@ -75,31 +68,31 @@ namespace QuickRun
 				try
 				{
 					System.Diagnostics.Process.Start(Command.Text, strCmdText);
-					this.WindowState = FormWindowState.Minimized;
+					WindowState = FormWindowState.Minimized;
 					Command.Text = "Enter Command";
 					Args.Text = "Enter Arguments (Optional)";
-					this.Hide();
+					Hide();
 				}
 				catch (Exception)
 				{
 					Error f3 = new Error();
 					f3.ShowDialog();
 				}
-				this.WindowState = FormWindowState.Minimized;
-				this.Hide();
+				WindowState = FormWindowState.Minimized;
+				Hide();
 			}
 		}
 
-		private void TrayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+		private void TrayIcon_MouseClick(object sender, MouseEventArgs e)
 		{
-			this.Show();
-			this.WindowState = FormWindowState.Normal;
+			Show();
+			WindowState = FormWindowState.Normal;
 		}
 
 		private void HideButton_Click(object sender, EventArgs e)
 		{
-			this.WindowState = FormWindowState.Minimized;
-			this.Hide();
+			WindowState = FormWindowState.Minimized;
+			Hide();
 		}
 
 		private void cmd_Click(object sender, EventArgs e)
