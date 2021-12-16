@@ -23,7 +23,7 @@ namespace QuickRun
 			Version.Text = Assembly.GetEntryAssembly().GetName().Version.ToString();
 			Trayicon.BalloonTipIcon = ToolTipIcon.Info;
 			Trayicon.BalloonTipText = "Welome to quick run";
-			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version.ToString(); ;
+			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version;
 			Trayicon.ShowBalloonTip(500);
 		}
 
@@ -48,6 +48,10 @@ namespace QuickRun
 				Command.Text = "Enter Command";
 				Args.Text = "Enter Arguments (Optional)";
 				this.Hide();
+				Trayicon.BalloonTipIcon = ToolTipIcon.Info;
+				Trayicon.BalloonTipText = "To open it double click on the system tray icon (it could be hidden in the arrow).";
+				Trayicon.BalloonTipTitle = "QuickRun is running in the background";
+				Trayicon.ShowBalloonTip(500);
 			}
 			catch (Exception)
 			{
