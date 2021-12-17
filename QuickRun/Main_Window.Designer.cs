@@ -53,10 +53,10 @@
 			this.Exit.FlatAppearance.BorderSize = 0;
 			this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Exit.ForeColor = System.Drawing.Color.Red;
-			this.Exit.Location = new System.Drawing.Point(269, 80);
-			this.Exit.Margin = new System.Windows.Forms.Padding(2);
+			this.Exit.Location = new System.Drawing.Point(359, 98);
+			this.Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Exit.Name = "Exit";
-			this.Exit.Size = new System.Drawing.Size(37, 20);
+			this.Exit.Size = new System.Drawing.Size(49, 25);
 			this.Exit.TabIndex = 0;
 			this.Exit.Text = "Quit";
 			this.Exit.UseVisualStyleBackColor = false;
@@ -67,10 +67,10 @@
 			this.Command.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
 			this.Command.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Command.ForeColor = System.Drawing.Color.White;
-			this.Command.Location = new System.Drawing.Point(9, 59);
-			this.Command.Margin = new System.Windows.Forms.Padding(2);
+			this.Command.Location = new System.Drawing.Point(12, 73);
+			this.Command.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Command.Name = "Command";
-			this.Command.Size = new System.Drawing.Size(106, 20);
+			this.Command.Size = new System.Drawing.Size(141, 22);
 			this.Command.TabIndex = 1;
 			this.Command.Text = "Enter Command";
 			this.Command.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CheckEnterKeyPress);
@@ -80,10 +80,10 @@
 			this.Args.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
 			this.Args.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Args.ForeColor = System.Drawing.Color.White;
-			this.Args.Location = new System.Drawing.Point(118, 59);
-			this.Args.Margin = new System.Windows.Forms.Padding(2);
+			this.Args.Location = new System.Drawing.Point(157, 73);
+			this.Args.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Args.Name = "Args";
-			this.Args.Size = new System.Drawing.Size(187, 20);
+			this.Args.Size = new System.Drawing.Size(249, 22);
 			this.Args.TabIndex = 2;
 			this.Args.Text = "Enter Arguments (Optional)";
 			// 
@@ -92,10 +92,9 @@
 			this.Title.AutoSize = true;
 			this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Title.ForeColor = System.Drawing.Color.DodgerBlue;
-			this.Title.Location = new System.Drawing.Point(76, 12);
-			this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.Title.Location = new System.Drawing.Point(101, 15);
 			this.Title.Name = "Title";
-			this.Title.Size = new System.Drawing.Size(230, 26);
+			this.Title.Size = new System.Drawing.Size(295, 32);
 			this.Title.TabIndex = 3;
 			this.Title.Text = "Welcome to QuickRun";
 			// 
@@ -106,10 +105,10 @@
 			this.Run.FlatAppearance.BorderSize = 0;
 			this.Run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Run.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-			this.Run.Location = new System.Drawing.Point(183, 81);
-			this.Run.Margin = new System.Windows.Forms.Padding(2);
+			this.Run.Location = new System.Drawing.Point(244, 100);
+			this.Run.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Run.Name = "Run";
-			this.Run.Size = new System.Drawing.Size(40, 19);
+			this.Run.Size = new System.Drawing.Size(53, 23);
 			this.Run.TabIndex = 4;
 			this.Run.Text = "Run";
 			this.Run.UseVisualStyleBackColor = false;
@@ -120,15 +119,15 @@
 			this.Trayicon.Icon = ((System.Drawing.Icon)(resources.GetObject("Trayicon.Icon")));
 			this.Trayicon.Text = "Click to open quick run";
 			this.Trayicon.Visible = true;
-			this.Trayicon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TrayIcon_MouseDoubleClick);
+			this.Trayicon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TrayIcon_MouseClick);
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(11, 11);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+			this.pictureBox1.Location = new System.Drawing.Point(15, 14);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(44, 42);
+			this.pictureBox1.Size = new System.Drawing.Size(59, 52);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 5;
 			this.pictureBox1.TabStop = false;
@@ -141,10 +140,10 @@
 			this.HideButton.FlatAppearance.BorderSize = 0;
 			this.HideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.HideButton.ForeColor = System.Drawing.Color.White;
-			this.HideButton.Location = new System.Drawing.Point(227, 81);
-			this.HideButton.Margin = new System.Windows.Forms.Padding(2);
+			this.HideButton.Location = new System.Drawing.Point(303, 100);
+			this.HideButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.HideButton.Name = "HideButton";
-			this.HideButton.Size = new System.Drawing.Size(38, 19);
+			this.HideButton.Size = new System.Drawing.Size(51, 23);
 			this.HideButton.TabIndex = 6;
 			this.HideButton.Text = "Hide";
 			this.HideButton.UseVisualStyleBackColor = false;
@@ -157,10 +156,10 @@
 			this.button1.FlatAppearance.BorderSize = 0;
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(9, 81);
-			this.button1.Margin = new System.Windows.Forms.Padding(2);
+			this.button1.Location = new System.Drawing.Point(12, 100);
+			this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(46, 19);
+			this.button1.Size = new System.Drawing.Size(61, 23);
 			this.button1.TabIndex = 7;
 			this.button1.Text = "Cmd";
 			this.button1.UseVisualStyleBackColor = false;
@@ -173,10 +172,10 @@
 			this.button2.FlatAppearance.BorderSize = 0;
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(59, 81);
-			this.button2.Margin = new System.Windows.Forms.Padding(2);
+			this.button2.Location = new System.Drawing.Point(79, 100);
+			this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(56, 19);
+			this.button2.Size = new System.Drawing.Size(75, 23);
 			this.button2.TabIndex = 8;
 			this.button2.Text = "Explorer";
 			this.button2.UseVisualStyleBackColor = false;
@@ -186,9 +185,10 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(80, 38);
+			this.label1.Location = new System.Drawing.Point(107, 47);
+			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(129, 13);
+			this.label1.Size = new System.Drawing.Size(159, 16);
 			this.label1.TabIndex = 9;
 			this.label1.Text = "The improved run window";
 			// 
@@ -196,9 +196,10 @@
 			// 
 			this.Version.AutoSize = true;
 			this.Version.ForeColor = System.Drawing.Color.Gray;
-			this.Version.Location = new System.Drawing.Point(265, 38);
+			this.Version.Location = new System.Drawing.Point(353, 47);
+			this.Version.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.Version.Name = "Version";
-			this.Version.Size = new System.Drawing.Size(40, 13);
+			this.Version.Size = new System.Drawing.Size(44, 16);
 			this.Version.TabIndex = 10;
 			this.Version.Text = "0.0.0.0";
 			// 
@@ -209,10 +210,10 @@
 			this.about.FlatAppearance.BorderSize = 0;
 			this.about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.about.ForeColor = System.Drawing.Color.White;
-			this.about.Location = new System.Drawing.Point(118, 81);
-			this.about.Margin = new System.Windows.Forms.Padding(2);
+			this.about.Location = new System.Drawing.Point(157, 100);
+			this.about.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.about.Name = "about";
-			this.about.Size = new System.Drawing.Size(56, 19);
+			this.about.Size = new System.Drawing.Size(75, 23);
 			this.about.TabIndex = 11;
 			this.about.Text = "About";
 			this.about.UseVisualStyleBackColor = false;
@@ -221,11 +222,11 @@
 			// MainWindow
 			// 
 			this.AcceptButton = this.Run;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
 			this.CancelButton = this.HideButton;
-			this.ClientSize = new System.Drawing.Size(317, 108);
+			this.ClientSize = new System.Drawing.Size(423, 133);
 			this.Controls.Add(this.about);
 			this.Controls.Add(this.Version);
 			this.Controls.Add(this.label1);
@@ -240,7 +241,7 @@
 			this.Controls.Add(this.Exit);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(2);
+			this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.Name = "MainWindow";
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Text = "QuickRun";
