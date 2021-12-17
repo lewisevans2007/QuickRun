@@ -76,11 +76,17 @@ namespace QuickRun
 				}
 				try
 				{
+					//Try create a minimized window, with the Command and Argument text.
 					System.Diagnostics.Process.Start(Command.Text, strCmdText);
 					this.WindowState = FormWindowState.Minimized;
 					Command.Text = "Enter Command";
 					Args.Text = "Enter Arguments (Optional)";
 					this.Hide();
+					//Create a notification to notify the user that QuickRun is running in the background as the system tray.
+					Trayicon.BalloonTipIcon = ToolTipIcon.Info;
+					Trayicon.BalloonTipText = "To open it double click on the system tray icon (it could be hidden in the arrow).";
+					Trayicon.BalloonTipTitle = "QuickRun is running in the background";
+					Trayicon.ShowBalloonTip(500);
 				}
 				catch (Exception)
 				{
