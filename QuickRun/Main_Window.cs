@@ -1,14 +1,32 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 
 namespace QuickRun
 {
 	public partial class MainWindow : Form
 	{
+		private ContextMenu contextMenu1;
+		private MenuItem menuItem1;
+
+
 		public MainWindow()
 		{
 			InitializeComponent();
+			components = new Container();
+			contextMenu1 = new ContextMenu();
+			menuItem1 = new MenuItem();
+			
+			contextMenu1.MenuItems.AddRange(
+				new MenuItem[] {menuItem1});
+			
+			menuItem1.Index = 0;
+			menuItem1.Text = "E&xit Quickrun";
+			menuItem1.Click += new EventHandler(menuItem1_Click);
+			Trayicon.ContextMenu = contextMenu1;
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -18,6 +36,7 @@ namespace QuickRun
 			Trayicon.BalloonTipText = "Welome to quick run";
 			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version;
 			Trayicon.ShowBalloonTip(500);
+			Run.FlatAppearance.BorderSize = 0;
 		}
 
 		private void Exit_onclick(object sender, EventArgs e)
@@ -116,6 +135,11 @@ namespace QuickRun
 		{
 			Info info = new Info();
 			info.ShowDialog();
+		}
+
+		private void menuItem1_Click(object sender, EventArgs a)
+		{
+			this.Close();
 		}
 	}
 }
