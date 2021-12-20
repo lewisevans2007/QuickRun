@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
 
@@ -50,7 +43,7 @@ namespace QuickRun
 				this.Hide();
 				//Create a notification to notify the user that QuickRun is running in the background as the system tray.
 				Trayicon.BalloonTipIcon = ToolTipIcon.Info;
-				Trayicon.BalloonTipText = "To open it double click on the system tray icon (it could be hidden in the arrow).";
+				Trayicon.BalloonTipText = "To open it click on the system tray icon (it could be hidden in the arrow).";
 				Trayicon.BalloonTipTitle = "QuickRun is running in the background";
 				Trayicon.ShowBalloonTip(500);
 			}
@@ -83,7 +76,7 @@ namespace QuickRun
 					this.Hide();
 					//Create a notification to notify the user that QuickRun is running in the background as the system tray.
 					Trayicon.BalloonTipIcon = ToolTipIcon.Info;
-					Trayicon.BalloonTipText = "To open it double click on the system tray icon (it could be hidden in the arrow).";
+					Trayicon.BalloonTipText = "To open it click on the system tray icon (it could be hidden in the arrow).";
 					Trayicon.BalloonTipTitle = "QuickRun is running in the background";
 					Trayicon.ShowBalloonTip(500);
 				}
@@ -97,7 +90,7 @@ namespace QuickRun
 			}
 		}
 
-		private void TrayIcon_MouseDoubleClick(object sender, MouseEventArgs e)
+		private void TrayIcon_MouseClick(object sender, MouseEventArgs e)
 		{
 			this.Show();
 			this.WindowState = FormWindowState.Normal;
