@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Reflection;
-
 namespace QuickRun
 {
 	public partial class MainWindow : Form
@@ -18,6 +17,7 @@ namespace QuickRun
 			Trayicon.BalloonTipText = "Welome to quick run";
 			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version;
 			Trayicon.ShowBalloonTip(500);
+			this.TopMost = true;
 		}
 
 		private void Exit_onclick(object sender, EventArgs e)
@@ -115,6 +115,16 @@ namespace QuickRun
 		{
 			Info info = new Info();
 			info.ShowDialog();
+		}
+
+		private void Form_close(object sender, FormClosedEventArgs e)
+		{
+			const string message =
+			"Doing this will close the form. You can use hide instead if you don't want to reopen this again";
+			const string caption = "QuickRun";
+			var result = MessageBox.Show(message, caption,
+										 MessageBoxButtons.OK,
+										 MessageBoxIcon.Asterisk);
 		}
 	}
 }

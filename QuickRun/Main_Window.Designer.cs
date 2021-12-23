@@ -54,7 +54,7 @@
 			this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Exit.ForeColor = System.Drawing.Color.Red;
 			this.Exit.Location = new System.Drawing.Point(273, 83);
-			this.Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Exit.Margin = new System.Windows.Forms.Padding(2);
 			this.Exit.Name = "Exit";
 			this.Exit.Size = new System.Drawing.Size(35, 20);
 			this.Exit.TabIndex = 0;
@@ -68,7 +68,7 @@
 			this.Command.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Command.ForeColor = System.Drawing.Color.White;
 			this.Command.Location = new System.Drawing.Point(9, 59);
-			this.Command.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Command.Margin = new System.Windows.Forms.Padding(2);
 			this.Command.Name = "Command";
 			this.Command.Size = new System.Drawing.Size(106, 20);
 			this.Command.TabIndex = 1;
@@ -81,7 +81,7 @@
 			this.Args.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.Args.ForeColor = System.Drawing.Color.White;
 			this.Args.Location = new System.Drawing.Point(118, 59);
-			this.Args.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Args.Margin = new System.Windows.Forms.Padding(2);
 			this.Args.Name = "Args";
 			this.Args.Size = new System.Drawing.Size(187, 20);
 			this.Args.TabIndex = 2;
@@ -107,7 +107,7 @@
 			this.Run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.Run.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
 			this.Run.Location = new System.Drawing.Point(186, 82);
-			this.Run.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Run.Margin = new System.Windows.Forms.Padding(2);
 			this.Run.Name = "Run";
 			this.Run.Size = new System.Drawing.Size(40, 19);
 			this.Run.TabIndex = 4;
@@ -126,7 +126,7 @@
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(11, 11);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(44, 42);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +142,7 @@
 			this.HideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.HideButton.ForeColor = System.Drawing.Color.White;
 			this.HideButton.Location = new System.Drawing.Point(230, 82);
-			this.HideButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.HideButton.Margin = new System.Windows.Forms.Padding(2);
 			this.HideButton.Name = "HideButton";
 			this.HideButton.Size = new System.Drawing.Size(39, 20);
 			this.HideButton.TabIndex = 6;
@@ -158,7 +158,7 @@
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button1.ForeColor = System.Drawing.Color.White;
 			this.button1.Location = new System.Drawing.Point(9, 81);
-			this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(37, 19);
 			this.button1.TabIndex = 7;
@@ -174,7 +174,7 @@
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button2.ForeColor = System.Drawing.Color.White;
 			this.button2.Location = new System.Drawing.Point(50, 82);
-			this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.button2.Margin = new System.Windows.Forms.Padding(2);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(54, 19);
 			this.button2.TabIndex = 8;
@@ -210,7 +210,7 @@
 			this.about.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.about.ForeColor = System.Drawing.Color.White;
 			this.about.Location = new System.Drawing.Point(108, 81);
-			this.about.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.about.Margin = new System.Windows.Forms.Padding(2);
 			this.about.Name = "about";
 			this.about.Size = new System.Drawing.Size(51, 19);
 			this.about.TabIndex = 11;
@@ -240,10 +240,11 @@
 			this.Controls.Add(this.Exit);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "MainWindow";
 			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Text = "QuickRun";
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_close);
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);

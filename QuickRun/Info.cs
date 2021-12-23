@@ -19,7 +19,7 @@ namespace QuickRun
 
 		private void Info_Load(object sender, EventArgs e)
 		{
-			Version.Text = "Version: "+Assembly.GetEntryAssembly().GetName().Version.ToString();
+			this.TopMost = true;
 		}
 	}
 }
