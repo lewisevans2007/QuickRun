@@ -14,7 +14,7 @@ namespace QuickRun
 		{
 			Version.Text = Assembly.GetEntryAssembly().GetName().Version.ToString();
 			Trayicon.BalloonTipIcon = ToolTipIcon.Info;
-			Trayicon.BalloonTipText = "Welome to quick run";
+			Trayicon.BalloonTipText = "Welcome to quick run";
 			Trayicon.BalloonTipTitle = "QuickRun " + Assembly.GetEntryAssembly().GetName().Version;
 			Trayicon.ShowBalloonTip(500);
 			this.TopMost = true;
