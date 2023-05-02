@@ -3,7 +3,7 @@
 
 The improved run window
 
-> **Note:**
+> **Note**
 >
 > This project is now archived.
 
